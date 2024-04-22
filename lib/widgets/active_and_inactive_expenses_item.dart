@@ -45,7 +45,7 @@ class InActiveExpensesItem extends StatelessWidget {
             height: 8,
           ),
           Text(
-            expensesItemModel.price,
+            expensesItemModel.date,
             style: AppStyles.styleRegular14,
           ),
           const SizedBox(
@@ -74,6 +74,7 @@ class ActiveExpensesItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(top: 16, bottom: 16, left: 20, right: 20),
       decoration: BoxDecoration(
+        color: const Color(0xff4DB7F2),
         border: Border.all(color: Colors.grey.shade300),
         borderRadius: BorderRadius.circular(12),
       ),
@@ -83,13 +84,20 @@ class ActiveExpensesItem extends StatelessWidget {
           Row(
             children: [
               CircleAvatar(
-                  backgroundColor: Colors.grey.shade200,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8),
-                    child: SvgPicture.asset(expensesItemModel.image),
-                  )),
+                backgroundColor: Colors.white.withOpacity(0.3),
+                child: Padding(
+                  padding: const EdgeInsets.all(8),
+                  child: SvgPicture.asset(
+                    expensesItemModel.image,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
               const Expanded(child: SizedBox()),
-              const Icon(Icons.keyboard_arrow_down_rounded),
+              const Icon(
+                Icons.keyboard_arrow_down_rounded,
+                color: Colors.white,
+              ),
             ],
           ),
           const SizedBox(
@@ -97,21 +105,21 @@ class ActiveExpensesItem extends StatelessWidget {
           ),
           Text(
             expensesItemModel.title,
-            style: AppStyles.styleSemiBold16,
+            style: AppStyles.styleSemiBold16.copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             expensesItemModel.price,
-            style: AppStyles.styleRegular14,
+            style: AppStyles.styleRegular14.copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             expensesItemModel.price,
-            style: AppStyles.styleSemiBold24,
+            style: AppStyles.styleSemiBold24.copyWith(color: Colors.white),
           ),
         ],
       ),
