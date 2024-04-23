@@ -13,7 +13,7 @@ class AllExpensesHeader extends StatelessWidget {
           "All Expenses",
           style: AppStyles.styleSemiBold20,
         ),
-        Expanded(child: SizedBox()),
+        Spacer(),
         MonthWidget(),
       ],
     );

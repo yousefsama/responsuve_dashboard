@@ -40,7 +40,7 @@ class CustomDrawer extends StatelessWidget {
                       drawerItemModel: DrawerItemModel(
                           image: AssetsImage.imagesLogout, title: "Log Out")),
                   SizedBox(
-                    height: 48,
+                    height: 24,
                   )
                 ],
               ),

@@ -14,7 +14,7 @@ class InActiveExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 16, bottom: 16, left: 20, right: 20),
+      padding: const EdgeInsets.only(top: 8, bottom: 8, left: 10, right: 10),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.grey.shade300),
         borderRadius: BorderRadius.circular(12),
@@ -27,7 +27,7 @@ class InActiveExpensesItem extends StatelessWidget {
               CircleAvatar(
                   backgroundColor: Colors.grey.shade200,
                   child: Padding(
-                    padding: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(4),
                     child: SvgPicture.asset(expensesItemModel.image),
                   )),
               const Expanded(child: SizedBox()),
@@ -35,7 +35,7 @@ class InActiveExpensesItem extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 34,
+            height: 8,
           ),
           Text(
             expensesItemModel.title,
@@ -72,7 +72,7 @@ class ActiveExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 16, bottom: 16, left: 20, right: 20),
+      padding: const EdgeInsets.only(top: 8, bottom: 8, left: 10, right: 10),
       decoration: BoxDecoration(
         color: const Color(0xff4DB7F2),
         border: Border.all(color: Colors.grey.shade300),
@@ -86,7 +86,7 @@ class ActiveExpensesItem extends StatelessWidget {
               CircleAvatar(
                 backgroundColor: Colors.white.withOpacity(0.3),
                 child: Padding(
-                  padding: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(4),
                   child: SvgPicture.asset(
                     expensesItemModel.image,
                     color: Colors.white,
@@ -101,7 +101,7 @@ class ActiveExpensesItem extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 34,
+            height: 8,
           ),
           Text(
             expensesItemModel.title,
