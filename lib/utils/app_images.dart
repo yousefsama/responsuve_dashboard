@@ -1,6 +1,6 @@
-class AssetsImage {
-  AssetsImage._();
-
+class Assets {
+  Assets._();
+  
   /// Assets for imagesAvatar1
   /// assets/images/avatar_1.svg
   static const String imagesAvatar1 = "assets/images/avatar_1.svg";
@@ -33,17 +33,21 @@ class AssetsImage {
   /// assets/images/logout.svg
   static const String imagesLogout = "assets/images/logout.svg";
 
-  /// Assets for imagesMy transaction
-  /// assets/images/my transaction.svg
-  static const String imagesMytransaction = "assets/images/my transaction.svg";
+  /// Assets for imagesMyCardBackground
+  /// assets/images/MyCardBackground.png
+  static const String imagesMyCardBackground = "assets/images/MyCardBackground.png";
 
   /// Assets for imagesMyinvestment
   /// assets/images/myinvestment.svg
   static const String imagesMyinvestment = "assets/images/myinvestment.svg";
 
-  /// Assets for imagesName card
-  /// assets/images/name card.svg
-  static const String imagesNamecard = "assets/images/name card.svg";
+  /// Assets for imagesMytransaction
+  /// assets/images/mytransaction.svg
+  static const String imagesMytransaction = "assets/images/mytransaction.svg";
+
+  /// Assets for imagesNamecard
+  /// assets/images/namecard.svg
+  static const String imagesNamecard = "assets/images/namecard.svg";
 
   /// Assets for imagesSettings
   /// assets/images/settings.svg
@@ -53,7 +57,8 @@ class AssetsImage {
   /// assets/images/statistics.svg
   static const String imagesStatistics = "assets/images/statistics.svg";
 
-  /// Assets for imagesWallet account
-  /// assets/images/wallet account.svg
-  static const String imagesWalletAccount = "assets/images/wallet account.svg";
+  /// Assets for imagesWalletAccount
+  /// assets/images/walletAccount.svg
+  static const String imagesWalletAccount = "assets/images/walletAccount.svg";
 }
+

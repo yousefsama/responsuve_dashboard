@@ -13,17 +13,17 @@ class AllExpensesListView extends StatefulWidget {
 class _AllExpensesListViewState extends State<AllExpensesListView> {
   final items = const [
     ExpensesItemModel(
-        image: AssetsImage.imagesBalance,
+        image: Assets.imagesBalance,
         title: 'Balance',
         date: 'date',
         price: r'$2000'),
     ExpensesItemModel(
-        image: AssetsImage.imagesIncome,
+        image: Assets.imagesIncome,
         title: 'Income',
         date: 'date',
         price: r'$2000'),
     ExpensesItemModel(
-        image: AssetsImage.imagesExpenses,
+        image: Assets.imagesExpenses,
         title: 'Expenses',
         date: 'date',
         price: r'$2000'),

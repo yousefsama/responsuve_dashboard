@@ -7,15 +7,15 @@ class LatestTransactionListView extends StatelessWidget {
   const LatestTransactionListView({super.key});
   static const items = [
     InfoCardModel(
-        image: AssetsImage.imagesAvatar1,
+        image: Assets.imagesAvatar1,
         title: 'Madrani Andi',
         subTitle: 'Madraniadi20@gmail'),
     InfoCardModel(
-        image: AssetsImage.imagesAvatar2,
+        image: Assets.imagesAvatar2,
         title: 'Madrani Andi',
         subTitle: 'Madraniadi20@gmail'),
     InfoCardModel(
-        image: AssetsImage.imagesAvatar1,
+        image: Assets.imagesAvatar1,
         title: 'Madrani Andi',
         subTitle: 'Madraniadi20@gmail')
   ];
