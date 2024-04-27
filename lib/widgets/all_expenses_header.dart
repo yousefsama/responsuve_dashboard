@@ -3,18 +3,18 @@ import 'package:responsivedashboard/utils/app_styles.dart';
 import 'package:responsivedashboard/widgets/month_widget.dart';
 
 class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({super.key});
-
+  const AllExpensesHeader({super.key, required this.title});
+  final String title;
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
         Text(
-          "All Expenses",
+          title,
           style: AppStyles.styleSemiBold20,
         ),
-        Spacer(),
-        MonthWidget(),
+        const Spacer(),
+        const MonthWidget(),
       ],
     );
   }
